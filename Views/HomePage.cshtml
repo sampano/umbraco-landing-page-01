@@ -1,0 +1,25 @@
+﻿@using Umbraco.Cms.Web.Common.PublishedModels;
+@inherits Umbraco.Cms.Web.Common.Views.UmbracoViewPage<ContentModels.HomePage>
+@using ContentModels = Umbraco.Cms.Web.Common.PublishedModels;
+@{
+	Layout = "Master.cshtml";
+}
+
+
+       <section id="scroll">
+            <div class="container px-5">
+                <div class="row gx-5 align-items-center">
+                    <div class="col-lg-6 order-lg-2">
+                        
+
+
+           <div class="col-lg-6 order-lg-1">
+                        <div class="p-5">
+                            <h2 class="display-4">@Model.Value("latestArticleTitle")</h2>
+                            <p>       @Model.Value("latestArticleParagraph")</p>
+                            <p>@Model.Value("headerImage")</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>

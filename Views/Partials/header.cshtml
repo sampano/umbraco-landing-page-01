@@ -1,0 +1,35 @@
+@inherits UmbracoViewPage
+ <!-- Footer-->
+      <!-- Page Header--> 
+@* 
+      @{
+        var headerBackgroundImage = @Model.Value("headerImage");
+      }
+        <header class="masthead" style="background-image: url(@headerBackgroundImage)">
+             
+            <div class="container position-relative px-4 px-lg-5">
+                <div class="row gx-4 gx-lg-5 justify-content-center">
+                    <div class="col-md-10 col-lg-8 col-xl-7">
+                        <div class="site-heading">
+                            <h1>@Model.Value("title")</h1>
+                            <span class="subheading">@Model.Value("subtitle")</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </header> *@
+
+
+        <header class="masthead text-center text-white">
+            <div class="masthead-content">
+                <div class="container px-5">
+                    <h1 class="masthead-heading mb-0">@Model.Value("title")</h1>
+                    <h2 class="masthead-subheading mb-0">@Model.Value("subtitle")</h2>
+                    <a class="btn btn-primary btn-xl rounded-pill mt-5" href="#scroll">Learn More</a>
+                </div>
+            </div>
+            <div class="bg-circle-1 bg-circle"></div>
+            <div class="bg-circle-2 bg-circle"></div>
+            <div class="bg-circle-3 bg-circle"></div>
+            <div class="bg-circle-4 bg-circle"></div>
+        </header>
